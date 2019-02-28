@@ -1,5 +1,5 @@
 document.getElementById('resetBut').onmousedown = function () {
-    this.style.top = ('20px');
+    this.style.top = ('110px');
     window.location.reload();
 };
 
