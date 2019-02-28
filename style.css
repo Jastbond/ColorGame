@@ -36,6 +36,10 @@ ul li {
     list-style-type: none;
 }
 
+ul li:first-child {
+    width: 60px;
+}
+
 ul li p {
     margin: 0;
     line-height: 40px;
