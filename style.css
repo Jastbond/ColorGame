@@ -1,0 +1,204 @@
+body {
+    background-color: rgba(79, 199, 255, 0.27);
+    font: 30px bold Arial, sans-serif;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+h1 {
+    text-align: center;
+    font-size: 26px;
+}
+
+ul {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li p {
+    margin: 0;
+    line-height: 40px;
+}
+
+button {
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.timer {
+    width: 150px;
+}
+
+.help {
+    text-align: center;
+    font-size: 20px;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.bottomTable {
+    opacity: 1;
+    border: 1px solid black;
+    outline:4px solid red;
+    outline-offset: 10px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* Required to make elements draggable in old WebKit */
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+
+}
+
+.topTable {
+    z-index: -2;
+    background-image: url(transparent.png);
+    border-collapse: collapse;
+    border-spacing: 0;
+
+}
+
+.topTable td {
+    width: 152px;
+    height: 152px;
+    color: transparent;
+}
+
+td span {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.top {
+    padding-bottom: 30px;
+}
+
+.bottom {
+    padding-top: 30px;
+}
+
+.wide {
+    display: block;
+}
+.high {
+    padding: 50px 0;
+}
+.bottomTable td {
+    border: 4px outset white;
+    word-break: normal;
+    background: rgba(79, 199, 255, 0.27);
+    color: rgba(255, 255, 255, 0.3);
+    text-shadow:
+            1px 2px 2px #fff,
+            0 0 0 #000,
+            1px 2px 2px #fff;
+    line-height:1;
+    font-weight: 800;
+    /*    -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: white;*/
+    width: 146px;
+    height: 146px;
+    text-transform: capitalize;
+}
+
+.bottomTable td span {
+}
+.rel {
+    position: relative;
+}
+
+#dragWrap {
+
+}
+
+#dragDiv{
+    cursor: move;
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    border-radius: 45px;
+}
+
+#resetBut {
+    position: absolute;
+    z-index: 1000;
+}
+
+.pop {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+    font-size: 50px;
+}
+.pop p {
+    text-align: center;
+}
+.myButton {
+    -webkit-box-shadow: 3px 4px 0px 0px #899599;
+    box-shadow: 3px 4px 0px 0px #899599;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #bab1ba));
+    background:-webkit-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+    background:-o-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(5%, #ededed), to(#bab1ba));
+    background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#bab1ba',GradientType=0);
+    background-color:#ededed;
+    border-radius:15px;
+    border:1px solid #d6bcd6;
+    display:inline-block;
+    cursor:pointer;
+    color: #071114;
+    font-family:Arial;
+    font-size:17px;
+    padding:7px 25px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #e1e2ed;
+}
+.myButton:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bab1ba), color-stop(1, #ededed));
+    background:-webkit-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+    background:-o-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(5%, #bab1ba), to(#ededed));
+    background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bab1ba', endColorstr='#ededed',GradientType=0);
+    background-color:#bab1ba;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+

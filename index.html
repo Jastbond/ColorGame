@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ColorGames1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>DO YOU KNOW COLORS?</h1>
+<p class="help">Drag smiley face to its color Name! Push START button to restart game!</p>
+<ul>
+    <li><button id="resetBut" class="myButton">START</button></li>
+    <li><p class="timer">Timer: <span class="" id="timer"></span></p></li>
+    <li><p class="info">Score:<span class="score">0</span></p></li>
+    <li><p class="info">Bonus:<span class="" id="bonus">0</span></p></li>
+</ul>
+<table class="bottomTable center" cellspacing="0" cellpadding="0" border="0" draggable="false" onmousedown="event.preventDefault ? event.preventDefault() : event.returnValue = false">
+    <tr>
+        <td class="colorTd"></td>
+        <td class="colorTd"></td>
+        <td class="colorTd"></td>
+    </tr>
+    <tr>
+        <td class="colorTd"></td>
+        <td class="colorTd dragWrap" id="dragWrap">
+            <div id="dragDiv" class=""><img src="smile_80x80.png" height="80" width="80"/>
+            </div>
+        </td>
+        <td class="colorTd"></td>
+    </tr>
+    <tr>
+        <td class="colorTd"></td>
+        <td class="colorTd"></td>
+        <td class="colorTd"></td>
+    </tr>
+</table>
+
+<table class="topTable center" cellspacing="0" cellpadding="0" border="0" draggable="false" onmousedown="event.preventDefault ? event.preventDefault() : event.returnValue = false">
+    <tr>
+        <td class="checkTd left"><span class='wide top'></span></td>
+        <td class="checkTd"><span class='wide'></span></td>
+        <td class="checkTd right"><span class='wide top'></span></td>
+    </tr>
+    <tr>
+        <td class="checkTd left"><span class="high"></span></td>
+        <td class="checkTd"></td>
+        <td class="checkTd right"><span class="high"></span></td>
+    </tr>
+    <tr>
+        <td class="checkTd left"><span class='wide bottom'></span></td>
+        <td class="checkTd"><span class='wide'></span></td>
+        <td class="checkTd right"><span class='wide bottom'></span></td>
+    </tr>
+</table>
+<div class="pop">
+    <div class="popMsg center"><p>GAME OVER!</p><br>
+    <p class="spanMsg">Your score: <span id="score">0</span> !</p>
+    </div>
+</div>
+
+<script src="color1.js"></script>
+</body>
+</html>
